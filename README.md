@@ -1,7 +1,7 @@
 by glenchiridza
 # DashBoard Preview
 ![dashboard](https://raw.githubusercontent.com/glenchiridza/openlayer_angular11/master/git_assets/dash1.png)
-![dashboard](https://raw.githubusercontent.com/glenchiridza/openlayer_angular11/master/git_assets/dash2.png)
+![dashboard](https://github.com/glenchiridza/dashboard_angular/blob/master/src/git_assets/dash1.png)
 
 # DashBoard
 

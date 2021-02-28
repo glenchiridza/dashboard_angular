@@ -6,6 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 background-color: #ffffff !important;
 color: #000000;
 }
+mat-card-header{background-color: #6c757d;}
 .bg-secondary {background-color: #6c757d;}
 .mat-progress-bar .mat-progress-bar-buffer {
   background-color: #6c757d;

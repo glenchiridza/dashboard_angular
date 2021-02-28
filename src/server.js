@@ -4,12 +4,12 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/glenchiridza-dash.herokuapp'));
+app.use(express.static('./dist/noteeditor'));
 
-app.get('/*', function(req,res) {
+app.get('/*', (req,res) =>
     
-res.sendFile(path.join('index.html',{root:'/dist/glenchiridza-dash.herokuapp/'}),
-});
+res.sendFile('index.html',{root:'/dist/noteeditor/'}),
+);
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);

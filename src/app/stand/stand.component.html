@@ -1,0 +1,16 @@
+<mat-card class="items" (dblclick)="edit.emit(stand)">
+    <h2>{{stand.title}}</h2>
+    <p>
+        ${{ stand.price }}
+    </p>
+    <p>
+        {{ stand.location }}
+    </p>
+    <p (click)="payNow()">
+        {{ stand.description }}
+    </p>
+    <p *ngIf="stand.isprocessed">
+        <button [routerLink]="['/payment']" class="btn bg-green" style="text-align: center;" mat-button>Buy</button>
+           </p>
+
+    </mat-card>

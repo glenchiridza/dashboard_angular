@@ -1,0 +1,27 @@
+
+
+<mat-drawer-container class="my-container">
+    <mat-drawer #drawer [mode]="'side'">
+    
+     <!--my side-content template-->
+       <side-content #content></side-content>
+    </mat-drawer>
+    <mat-drawer-content class="container">
+        <button style="margin-bottom: 20px;" (click)="drawer.toggle()" mat-raised-button>
+                <mat-icon>menu</mat-icon>
+        </button>
+
+        <dash-board *ngIf="content.dashservice.dash"></dash-board>
+        <dash-profile *ngIf="content.dashservice.prof"></dash-profile>
+        <dash-notify *ngIf="content.dashservice.notif"></dash-notify>
+        <dash-pay *ngIf="content.dashservice.pay"></dash-pay>
+        <dash-support *ngIf="content.dashservice.sup"></dash-support>
+        <app-upload  *ngIf="content.dashservice.dash"></app-upload>
+
+      
+      
+    </mat-drawer-content>
+</mat-drawer-container>
+
+  <!-- <dash-board></dash-board> -->
+  

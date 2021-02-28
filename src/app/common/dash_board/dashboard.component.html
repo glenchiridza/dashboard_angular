@@ -1,0 +1,90 @@
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+        <mat-card class="card">
+            <mat-card-header class="card-header bg-secondary">
+                <mat-card-title class="card-title">Stands</mat-card-title>
+                <mat-card-subtitle class="card-category">Promotions</mat-card-subtitle>
+            
+            </mat-card-header>
+            <div class="card-body">
+                <div class="row">
+                <p class="col-md-8">90 Stands on today's promotion</p>
+           
+                <div class="col-md-2">
+                    <mat-icon class="icon-color">star</mat-icon>
+                  </div>
+                  </div>
+                 </div>
+        </mat-card>
+        </div>
+
+        <div class="col-md-4">
+            <mat-card class="card">
+                <mat-card-header class="card-header bg-secondary">
+                    <mat-card-title class="card-title">Notice</mat-card-title>
+                    <mat-card-subtitle class="card-category">Update</mat-card-subtitle>
+                
+                </mat-card-header>
+                <div class="card-body">
+                    <div class="row">
+                        <p class="col-md-12">100 Stands available in Waterfalls</p>
+                        </div>
+               
+                </div>
+            </mat-card>
+            </div>
+
+
+        <div class="col-md-4">
+            <mat-card class="card">
+                <mat-card-header class="card-header bg-secondary">
+                
+                    <mat-card-title class="card-title">Population</mat-card-title>
+                    <mat-card-subtitle class="card-category">Harare City</mat-card-subtitle>
+                
+                </mat-card-header>
+                <div class="card-body">
+                    <div>
+                        <mat-carousel
+                        timings="200ms ease-in"
+                        [autoplay]="true"
+                        interval="6000"
+                        color="green"
+                        max-width="auto"
+                        slides="10"
+                        [loop]="true"
+                        [hideIndicators]="true"
+                        [useKeyboard]="true"
+                        [useMouseWheel]="false"
+                        orientation="ltr"
+                        >
+                        
+                        <mat-carousel-slide
+                        
+                        *ngFor="let slide of slides;let i = index"
+                        [image]="slide.image"                        
+                        overlayColor="#ffffff"
+                        [hideOverlay]="false">
+                        <p>{{SLIDELANDS[indice < SLIDELANDS.length?indice:indice-i].locale}}
+                            <mat-progress-bar mode="determinate" value="{{SLIDELANDS[indice < SLIDELANDS.length?indice:indice-i].perc}}" style="height:5px;"></mat-progress-bar>
+                            </p>
+                            <p>{{SLIDELANDS[index < SLIDELANDS.length?index:index-i].locale}}
+                                <mat-progress-bar mode="determinate" value="{{SLIDELANDS[index < SLIDELANDS.length?index:index-i].perc}}" style="height:5px;"></mat-progress-bar>
+                                </p>
+                    </mat-carousel-slide>
+                    
+                    </mat-carousel>
+                    </div>
+
+
+                </div>
+            </mat-card>
+            </div>
+    
+    
+    </div>
+</div>

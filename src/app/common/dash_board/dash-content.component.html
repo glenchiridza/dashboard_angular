@@ -1,0 +1,54 @@
+
+<div class="card-header">
+    <mat-card-title>
+    
+         <img class="img-thumbnail rounded-circle" *ngIf="imageSet" [src]="user.imageUrl"/>
+         <!-- <mat-icon *ngIf="!imageSet" style="margin:40px;;">person</mat-icon> -->
+         <p id="user" >Hi {{username}}</p>
+    </mat-card-title>
+</div>
+    <div [ngClass]="{'active':dashservice.dash}" class="card-header" (click)="dash==false?dashboard():null">
+    <mat-card-title>
+    <mat-icon>dashboard</mat-icon>
+        DashBoard</mat-card-title>
+    </div>
+
+            <div [ngClass]="{'active':dashservice.prof}" class="card-header" (click)="profile()">
+    <mat-card-title>
+    <mat-icon>manage_accounts</mat-icon>
+    Profile</mat-card-title>
+            </div>
+
+    <div [ngClass]="{'active':dashservice.notif}" class="card-header" (click)="notify()">
+    <mat-card-title>
+    <mat-icon>notifications</mat-icon>
+        Notifications {{"("+serviceApplied()+")"}}</mat-card-title>
+    </div>
+
+    <div [ngClass]="{'active':dashservice.pay}" class="card-header" (click)="payment()">
+        <mat-card-title>
+            <mat-icon>attach_money</mat-icon>
+            Payments
+        </mat-card-title>
+    </div>
+
+
+    <div [ngClass]="{'active':dashservice.sup}" class="card-header" (click)="support()">
+        <mat-card-title>
+            <mat-icon>contact_support</mat-icon>
+            Support
+        </mat-card-title>
+    </div>
+
+    <div [ngClass]="{'active':dashservice.log}" class="card-header" (click)="logout()">
+        <mat-card-title>
+            <mat-icon>logout</mat-icon>
+            Logout
+        </mat-card-title>
+    </div>
+
+
+<mat-sidenav-container>
+    <mat-sidenav>Second</mat-sidenav>
+    <mat-sidenav-content>Primary</mat-sidenav-content>
+</mat-sidenav-container>

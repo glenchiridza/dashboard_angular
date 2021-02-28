@@ -1,0 +1,121 @@
+/*card css*/
+.bg-green {background-color:#006400;}
+
+#card-head {
+    color:#fff;
+    font-weight: 700;
+}
+#stand_drag {
+    max-height: 580px;
+    min-height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    scrollbar-color: gray #fff;
+    
+}
+
+/* animation */
+@keyframes textdrag {
+    0% {color: green;left: 200px;top: 0px;}
+    25% {color:orange;left:200px;top:0px;}
+    50% {color:green;right: 200px;top: 5px;}
+    75% {color:orange;right: 200px;top: 5px;}
+    100%{color: #6c757d;right: 0px;top: 0px;}
+}
+#dragtext{
+    animation-name: textdrag;
+    animation-duration: 12s;
+}
+
+.top-spacer{
+margin-top: 20px;
+}
+
+.content-wrapper {
+    max-width: 100%;
+    margin:auto;
+}
+
+
+.list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    border-radius: 7px;
+}
+
+app-new-task {
+    margin-bottom: 30px;
+}
+
+.empty-label {
+    font-size: 1.5em;
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+:host{
+    display: block;
+}
+
+.newstand {
+    margin-bottom: 20px;
+}
+.newstand >mat-icon{vertical-align: middle;}
+
+app-stand{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+a {color:#006400;}
+
+
+
+.cdk-drag-animating {
+    transition: transform 300ms;
+}
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+
+/* bot css */
+.card-title {
+    color:#fff;font-weight:700;
+}
+.card-category{
+    color:orange;font-weight:450;
+}
+#bot {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    z-index: 1;
+}
+#bot >mat-icon{
+    font-size: 65px;
+    font-weight: 800;
+    color: #006400;
+    cursor: pointer;
+}
+#bot-text {
+    color:#6c757d;
+    /* border: 1px solid #6c757d;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: inherit; */
+}
+#bot-input {
+border:1px solid #006400;
+color:#6c757d;
+margin-left: 5%;
+padding-left: 5px;
+}
+
+
+.row >mat-icon {margin-top:1.5%;
+    color:#006400;
+    cursor: pointer;
+    vertical-align: middle;}

@@ -1,0 +1,51 @@
+<div style="margin-left:1.3%;">  
+    <h1>Edit Your Profile </h1>
+    <hr>
+    <div class="row">
+    <div class="col-md-6">
+
+<mat-card class="card">
+      <form autocomplete="off" novalidate>
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" type="text" class="form-control" placeholder="First Name..." />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" type="text" class="form-control" placeholder="Last Name..." />
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input id="Email" type="email" class="form-control" placeholder="Email Address..." />
+          </div>
+          <div class="form-group">
+            <label for="OldPassword">Old Password:</label>
+            <input id="OldPassword" type="password" class="form-control" placeholder="Old Password..." />
+          </div>
+          <div class="form-group">
+            <label for="NewPassowrd">New Password:</label>
+            <input id="NewPassowrd" type="password" class="form-control" placeholder="New Passowrd.." />
+          </div>
+  
+        <button type="submit" class="btn bg-green btn-md">Save</button> &nbsp;
+        <button type="button" class="btn btn-md bg-orange">Cancel</button>
+      </form>
+
+</mat-card>
+    </div>
+
+    <div class="col-md-6" style="background-color: #ffffff; color:#6c757d;">
+
+      <mat-card class="card">
+<br>
+    <p>Date Signed: 12/02/2021</p>
+    <p>Home Address: 120 Alpse street Vainona</p>
+  
+<img class="img-responsive" style="height: 50%; width: 90%;" [src]="'assets/profile.png'"/>
+  </mat-card>
+</div>  
+
+    </div>
+  </div>
+  

@@ -1,0 +1,12 @@
+
+mat-toolbar {
+
+    background-color:#c4bfb6;
+    margin-bottom: 15px;
+}
+
+mat-toolbar > span {
+    margin-left: 10px;
+    /* color:#ffffff; */
+    font-weight: 800px;
+}

@@ -25,7 +25,6 @@ export class AppComponent {
   }
   else{
     this.logState ="Log In"
-    this.regState ="Register"
     this.login = false
   }
   

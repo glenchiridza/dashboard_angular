@@ -1,8 +1,15 @@
 
 <!-- <mat-toolbar color="primary"> -->
   <mat-toolbar class="bg-light">
+
+  <mat-toolbar-row>
+    
   <mat-icon>home</mat-icon>
   <span>Stands on Offer</span>
+      <span class="spacer"></span>
+      <a *ngIf="!registered" (click)="clickedR()" mat-button routerLink="/register">{{regState}}</a>
+      <a *ngIf="!login" (click)="clickedL()" mat-button routerLink="/login">{{logState}}</a>
+   </mat-toolbar-row>
 </mat-toolbar>
 <!-- <side-nav></side-nav> -->
 <router-outlet></router-outlet>

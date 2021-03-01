@@ -12,4 +12,34 @@ import {StandService} from './stand/stand.service';
 })
 export class AppComponent {
   title = 'Harare stands';
+
+  registered = false
+  login = false
+  logState = "Login"
+  regState = "Register"
+
+  clickedL(){
+  this.login = !this.login
+  if(this.login){
+  this.logState = "Log Out"
+  }
+  else{
+    this.logState ="Log In"
+    this.regState ="Register"
+    this.login = false
+  }
+  
+  }
+
+  clickedR(){
+    this.registered = !this.registered
+    if(this.registered){
+      this.regState = " "
+      this.logState = "Log Out"
+      }
+      else{
+        this.regState ="Register"
+        this.registered = false
+      }
+    }
 }

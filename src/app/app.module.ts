@@ -34,6 +34,8 @@ import { DashService } from './common/dash_board/dash.service';
 import { NotificationComponent } from './dash-modules/notification/notification.component';
 import { PayDashComponent } from './dash-modules/payments/pay-dash.component';
 import { SupportComponent } from './dash-modules/support/support.component';
+import { RegistrationComponentComponent } from './registration-component/registration-component.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { SupportComponent } from './dash-modules/support/support.component';
     ProfileComponent,
     NotificationComponent,
     PayDashComponent,
-    SupportComponent
+    SupportComponent,
+    RegistrationComponentComponent,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
